@@ -41,8 +41,8 @@ npm --version
 
 1. **Clone the repository** (if applicable):
    \`\`\`bash
-   git clone <repository-url>
-   cd todo-dashboard
+   git clone https://github.com/RadhikaTech/Procodebase-AI-Task-Management-Dashboard
+   cd Procodebase-AI-Task-Management-Dashboard
    \`\`\`
 
 2. **Install dependencies**:
@@ -90,9 +90,7 @@ npm run lint         # Check code formatting
 
 ### Testing
 \`\`\`bash
-npm run test         # Run tests
-npm run test:watch   # Run tests in watch mode
-npm run test:ui      # Run tests with UI
+npx vitest         # Run tests
 \`\`\`
 
 ## Project Structure
@@ -162,83 +160,3 @@ Edit the CSS custom properties in `src/app.css`:
 1. Update the `Task` type in `src/lib/types/task.ts`
 2. Modify the task creation form in the modal components
 3. Update the task display in `TaskCard.svelte`
-
-## Deployment
-
-### Build for Production
-\`\`\`bash
-npm run build
-\`\`\`
-
-### Deploy to Vercel (Recommended)
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run: `vercel`
-3. Follow the prompts
-
-### Deploy to Netlify
-1. Build the project: `npm run build`
-2. Deploy the `build` folder to Netlify
-
-### Deploy to Other Platforms
-The app uses the auto-adapter, which works with most platforms. For specific platforms, you may need to change the adapter in `svelte.config.js`.
-
-## Browser Support
-
-- **Chrome**: 90+
-- **Firefox**: 88+
-- **Safari**: 14+
-- **Edge**: 90+
-
-## Performance
-
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
-- **Bundle Size**: ~50KB gzipped
-- **First Load**: <1s on 3G
-- **Responsive**: Optimized for all screen sizes
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Make your changes and test thoroughly
-4. Run code quality checks: `npm run lint && npm run check`
-5. Commit your changes: `git commit -m 'Add feature'`
-6. Push to the branch: `git push origin feature-name`
-7. Submit a pull request
-
-## Troubleshooting
-
-### Common Issues
-
-**Port already in use**:
-\`\`\`bash
-npm run dev -- --port 3000  # Use different port
-\`\`\`
-
-**Build errors**:
-\`\`\`bash
-rm -rf node_modules package-lock.json
-npm install  # Clean install
-\`\`\`
-
-**Type errors**:
-\`\`\`bash
-npm run check  # Check for TypeScript errors
-\`\`\`
-
-### Getting Help
-
-- Check the [SvelteKit documentation](https://kit.svelte.dev/docs)
-- Review [Tailwind CSS docs](https://tailwindcss.com/docs)
-- Open an issue for bugs or feature requests
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Built with [SvelteKit](https://kit.svelte.dev/)
-- UI components inspired by [shadcn/ui](https://ui.shadcn.com/)
-- Icons by [Lucide](https://lucide.dev/)
-- Fonts by [Google Fonts](https://fonts.google.com/)
